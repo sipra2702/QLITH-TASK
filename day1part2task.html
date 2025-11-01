@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <h2>Application Form</h2>
+    <form>
+        <label>First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label>Last Name</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label>Date Of Birth</label>
+        <input type="text" name="dob" placeholder=" mm / dd / yyyy">
+        <label>Age</label>
+        <input type="number" name="age" min="1" max="100" >
+        <br>
+        <label>Gender:</label>
+        <select name="gender" id="">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Other</option>
+        </select>
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="Enter email address">
+        <br>
+        <label>Positions Available:</label>
+        <input type="radio" value="junior">Junior Developer
+        <input type="radio" value="mid">Mid-Level
+        <input type="radio" value="senior">Senior Developer
+        <br>
+        <label>Programming Languages:</label>
+        <input type="checkbox" value="" >Java
+        <input type="checkbox" value="">JavaScript
+        <input type="checkbox" value="">Python
+        <br>
+        <label>Password:</label>
+        <input type="password" >
+        <label>Confirm Password:</label>
+        <input type="password">
+        <br>
+        <input type="button" value="Submit">
+        <input type="button" value="Reset">
+    </form>
+</body>
+</html>
