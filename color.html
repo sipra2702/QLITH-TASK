@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .grid-container{
+            width: 600px;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 20px auto;
+            display: grid;
+            background-color: wheat;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(5,1fr);
+            gap: 10px;
+}
+.head{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color:#66d3fa }
+.hero{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #d8c4f7
+}
+  .maincontent {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: #fdd54f;
+    }
+    .sidebar {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: #a4d68e;
+    }
+    .extracontent {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: #bdbdbd;
+    }
+
+    
+    .images {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      background-color: #5ac18e;
+    }
+
+    
+    .rposts {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      background-color: #f9c0c0;
+    }
+
+    
+    .footer {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      background-color: #f6a623;
+    }
+
+    
+    .grid-container > div {
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+    } 
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="head">Header</div>
+        <div class="hero">Hero</div>
+        <div class="maincontent">Main Content</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="extracontent">Extra Content</div>
+        <div class="images">Related Images</div>
+        <div class="rposts">Related Posts</div>
+        <div class="footer">Footer</div>
+
+    </div>
+    
+</body>
+</html>
